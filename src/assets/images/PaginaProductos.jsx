@@ -26,7 +26,7 @@ export const PaginaProductos = () => {
   const librosDisponibles = [
     {
       id: 1,
-      imagen: "/src/assets/images/Libro1.webp",
+      imagen: "/public/images/Libro1.webp",
       titulo: "Caraval",
       autor: "Stephanie Garber",
       precio: 40000,
@@ -34,7 +34,7 @@ export const PaginaProductos = () => {
 
     {
       id: 2,
-      imagen: "/src/assets/images/Libro3.jpg",
+      imagen: "/public/images/Libro3.jpg",
       titulo: "Lupin",
       autor: "Maurice Leblanc",
       precio: 30000,
@@ -42,7 +42,7 @@ export const PaginaProductos = () => {
 
     {
       id: 3,
-      imagen: "/src/assets/images/Libro2.jpeg",
+      imagen: "/public/images/Libro2.jpeg",
       titulo: "Holmes",
       autor: "Artur Conan",
       precio: 45000,
@@ -50,7 +50,7 @@ export const PaginaProductos = () => {
 
     {
       id: 4,
-      imagen: "/src/assets/images/Libro4.jpg",
+      imagen: "/public/images/Libro4.jpg",
       titulo: "Valkirias",
       autor: "I. Biggi",
       precio: 60000,
@@ -58,7 +58,7 @@ export const PaginaProductos = () => {
 
     {
       id: 5,
-      imagen: "/src/assets/images/Libro5.jpg",
+      imagen: "/public/images/Libro5.jpg",
       titulo: "HappyPotter",
       autor: "J.K Rowling",
       precio: 50000,
@@ -66,7 +66,7 @@ export const PaginaProductos = () => {
 
     {
       id: 6,
-      imagen: "/src/assets/images/Libro6.jpg",
+      imagen: "/public/images/Libro6.jpg",
       titulo: "Moby Dick",
       autor: "Herman Melville",
       precio: 70000,
