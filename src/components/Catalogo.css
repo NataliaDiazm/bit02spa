@@ -1,5 +1,5 @@
 .banner-shop{
-  background-image: url('/public/images/banner-shop.jpg'); /* Ruta de la imagen de fondo */
+  background-image: url('/images/banner-shop.jpg'); /* Ruta de la imagen de fondo */
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .banner-shop-card{
-  background-image: url('/public/images/img-banner-shop.jpg'); /* Ruta de la imagen de fondo */
+  background-image: url('/images/img-banner-shop.jpg'); /* Ruta de la imagen de fondo */
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
