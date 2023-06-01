@@ -1,0 +1,88 @@
+.carrito {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carrito h3 {
+  font-size: 25px;
+  margin-bottom: 12px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.carrito ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.carrito li {
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  
+}
+
+.carrito img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+.carrito h4 {
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+}
+
+.carrito p {
+  margin: 0;
+}
+
+.carrito button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  width: auto;
+  margin-top: 10px;
+
+}
+
+.carrito button:hover {
+  background-color: #555;
+}
+
+.carrito p.total {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .5px;
+}
+
+.pagar-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.pagar-button:hover {
+  background-color: #0056b3;
+}
+
+

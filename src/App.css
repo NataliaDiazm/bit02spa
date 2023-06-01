@@ -62,6 +62,10 @@ font-family: 'Raleway', sans-serif;
   right: 10px;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
 
 
 

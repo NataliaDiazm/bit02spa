@@ -1,12 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaShoppingCart } from 'react-icons/fa';
 
 export const Navegacion = () => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
+  };
+
+  const scrollToCarritoCompras = () => {
+    const carritoComprasSection = document.getElementById('carritocompras');
+    if (carritoComprasSection) {
+      carritoComprasSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    toggleExpanded();
   };
 
   return (
@@ -18,7 +26,9 @@ export const Navegacion = () => {
         <div className='links-container'>
           <Link className='links' to='/' onClick={toggleExpanded}>Inicio</Link>
           <Link className='links' to='/productos' onClick={toggleExpanded}>Productos</Link>
-          <Link className='links' to='/compras' onClick={toggleExpanded}>Carrito de compras</Link>
+          <button className="links" onClick={scrollToCarritoCompras}>
+            <FaShoppingCart />
+          </button>
         </div>
       )}
     </nav>
