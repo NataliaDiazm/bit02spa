@@ -24,8 +24,8 @@ export const Navegacion = () => {
       </button>
       {expanded && (
         <div className='links-container'>
-          <Link className='links' to='/' onClick={toggleExpanded}>Inicio</Link>
-          <Link className='links' to='/productos' onClick={toggleExpanded}>Productos</Link>
+          <Link className='links' to='/bit02spa' >Inicio</Link>
+          <Link className='links' to='/bit02spa/productos' onClick={toggleExpanded}>Productos</Link>
           <button className="links" onClick={scrollToCarritoCompras}>
             <FaShoppingCart />
           </button>

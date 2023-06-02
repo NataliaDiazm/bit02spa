@@ -1,32 +1,23 @@
 import "./Catalogo.css";
 import "./Carrito.css";
-import "./modalStyles.css";
+import libro1 from '../../public/libro1.webp';
+import libro2 from '../../public/libro2.jpeg';
+import libro3 from '../../public/libro3.jpg';
+import libro4 from '../../public/libro4.jpg';
+import libro5 from '../../public/libro5.jpg';
+import libro6 from '../../public/libro6.jpg';
 import { useState } from "react";
-import Modal from "react-modal";
 
 export const PaginaProductos = () => {
   const [carrito, setCarrito] = useState([]);
   const [total, setTotal] = useState(0);
 
-  /* VENTANA MODAL AL PAGAR */
-
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const handlePagarClick = () => {
-    // Realizar acciones necesarias antes de mostrar el modal
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    // Cerrar el modal
-    setModalOpen(false);
-    window.location.reload();
-  };
+  
 
   const librosDisponibles = [
     {
       id: 1,
-      imagen: "/public/images/Libro1.webp",
+      imagen: libro1,
       titulo: "Caraval",
       autor: "Stephanie Garber",
       precio: 40000,
@@ -34,7 +25,7 @@ export const PaginaProductos = () => {
 
     {
       id: 2,
-      imagen: "/public/images/Libro3.jpg",
+      imagen: libro3,
       titulo: "Lupin",
       autor: "Maurice Leblanc",
       precio: 30000,
@@ -42,7 +33,7 @@ export const PaginaProductos = () => {
 
     {
       id: 3,
-      imagen: "/public/images/Libro2.jpeg",
+      imagen: libro2,
       titulo: "Holmes",
       autor: "Artur Conan",
       precio: 45000,
@@ -50,7 +41,7 @@ export const PaginaProductos = () => {
 
     {
       id: 4,
-      imagen: "/public/images/Libro4.jpg",
+      imagen: libro4,
       titulo: "Valkirias",
       autor: "I. Biggi",
       precio: 60000,
@@ -58,7 +49,7 @@ export const PaginaProductos = () => {
 
     {
       id: 5,
-      imagen: "/public/images/Libro5.jpg",
+      imagen: libro5,
       titulo: "HappyPotter",
       autor: "J.K Rowling",
       precio: 50000,
@@ -66,7 +57,7 @@ export const PaginaProductos = () => {
 
     {
       id: 6,
-      imagen: "/public/images/Libro6.jpg",
+      imagen: libro6,
       titulo: "Moby Dick",
       autor: "Herman Melville",
       precio: 70000,
@@ -168,22 +159,8 @@ export const PaginaProductos = () => {
             Total: ${" "}
             {total.toLocaleString("es-CO", { minimumFractionDigits: 0 })}
           </p>
-          <button onClick={handlePagarClick}>Enviar pedido</button>
+          <button>Enviar pedido</button>
 
-          <Modal
-            isOpen={modalOpen}
-            onRequestClose={closeModal}
-            contentLabel="Pedido recibido"
-            className="modal-content" // Aplica la clase CSS al contenido de la ventana modal
-            overlayClassName="modal-overlay"
-          >
-            <h2>Pedido recibido con éxito</h2>
-            <p>
-              Tu pedido ha sido recibido correctamente. <br /> Te enviaremos la
-              confimacion para realizar el pago via email
-            </p>
-            <button className="cerrar" onClick={closeModal}>Cerrar</button>
-          </Modal>
         </div>
       </div>
     </>
