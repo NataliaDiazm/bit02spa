@@ -3,9 +3,9 @@ import './Inicio.css';
 
 export const PaginaInicio = () => {
   const libros = [
-    { id: 1, nombre: "Caraval", imagen: "/libro2.jpeg" },
-    { id: 2, nombre: "Holmes", imagen: "/Libro2.jpeg" },
-    { id: 3, nombre: "Lupin", imagen: "/Libro3.jpg" },
+    { id: 1, nombre: "Caraval", imagen: "/public/libro1.webp" },
+    { id: 2, nombre: "Holmes", imagen: "/public/libro2.jpeg" },
+    { id: 3, nombre: "Lupin", imagen: "/public/libro3.jpg" },
   ];
 
   return (
