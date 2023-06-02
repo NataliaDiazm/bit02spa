@@ -3,7 +3,7 @@ import './Inicio.css';
 
 export const PaginaInicio = () => {
   const libros = [
-    { id: 1, nombre: "Caraval", imagen: "/Libro2.jpeg" },
+    { id: 1, nombre: "Caraval", imagen: "/libro2.jpeg" },
     { id: 2, nombre: "Holmes", imagen: "/Libro2.jpeg" },
     { id: 3, nombre: "Lupin", imagen: "/Libro3.jpg" },
   ];
