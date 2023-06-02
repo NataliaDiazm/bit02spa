@@ -1,11 +1,14 @@
 import LibroCard from "./LibroCard";
 import './Inicio.css';
+import libro1 from '../../public/libro1.webp';
+import libro2 from '../../public/libro2.jpeg';
+import libro3 from '../../public/libro3.jpg';
 
 export const PaginaInicio = () => {
   const libros = [
-    { id: 1, nombre: "Caraval", imagen: "/public/libro1.webp" },
-    { id: 2, nombre: "Holmes", imagen: "/public/libro2.jpeg" },
-    { id: 3, nombre: "Lupin", imagen: "/public/libro3.jpg" },
+    { id: 1, nombre: "Caraval", imagen: libro1 },
+    { id: 2, nombre: "Holmes", imagen: libro2 },
+    { id: 3, nombre: "Lupin", imagen: libro3 },
   ];
 
   return (
